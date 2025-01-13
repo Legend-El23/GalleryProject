@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <!--Custom Css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--Box Icon for Responsive Menu bar -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- This Cdn help you to add Icon easily, later i will show to to manually create the hambuerger and the X icon -->
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./div/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./div/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./div/favicon-16x16.png">
+    <link rel="manifest" href="./div/site.webmanifest">
+</head>
+
+<body>
+
+    <!-- Header Starts-->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="./img/el-logo.png" alt="Legend El art gallery logo">
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#" title="nav-items">Home</a>
+            <a href="#" title="nav-items">About</a>
+            <a href="#" title="nav-items">Pricing</a>
+            <a href="#" title="nav-items">Contact</a>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+
+    <!--== CARD GRID WITH FILTERING EFFECT START ==-->
+    <section id="Gallery-centr">
+        <div class="container">
+
+            <div class="card-title">
+                <h2>EL GALLERY</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac pretium sem, at feugiat nunc.
+                    Pellentesque aliquam et turpis egestas lacinia. Pellentesque quis maximus sapien.
+                    Ut maximus eros ac est iaculis blandit. Praesent sagittis orci in diam tincidunt,
+                    nec facilisis augue iaculis. Aliquam dolor lorem.</p>
+            </div>
+
+            <!--Buttons starts-->
+            <div class="button-links">
+                <span class="button-link button-active" data-name="all"> All</span>
+                <span class="button-link" data-name="city"> City</span>
+                <span class="button-link" data-name="nature"> Nature</span>
+                <span class="button-link" data-name="painting"> Painting</span>
+                <span class="button-link" data-name="snow"> Snow</span>
+                <span class="button-link" data-name="valley"> Valley</span>
+            </div>
+            <!--Buttons Ends-->
+
+
+            <!-- Imges to be filter start -->
+            <div class="img-show">
+                <div class="gallery-img" data-name="city">
+                    <img src="./img/city/pic-1.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="nature">
+                    <img src="./img/nature/pic-1.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="painting">
+                    <img src="./img/painting/pic-1.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="snow">
+                    <img src="./img/snow/pic-1.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="valley">
+                    <img src="./img/valley/pic-1.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="city">
+                    <img src="./img/city/pic-2.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="nature">
+                    <img src="./img/nature/pic-2.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="painting">
+                    <img src="./img/painting/pic-2.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="snow">
+                    <img src="./img/snow/pic-2.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="valley">
+                    <img src="./img/valley/pic-2.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="city">
+                    <img src="./img/city/pic-3.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="nature">
+                    <img src="./img/nature/pic-3.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="painting">
+                    <img src="./img/painting/pic-3.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="snow">
+                    <img src="./img/snow/pic-3.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="valley">
+                    <img src="./img/valley/lost.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="city">
+                    <img src="./img/city/pic-4.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="nature">
+                    <img src="./img/nature/pic-4.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="painting">
+                    <img src="./img/painting/pic-4.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="snow">
+                    <img src="./img/snow/pic-4.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="valley">
+                    <img src="./img/valley/pic-4.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="city">
+                    <img src="./img/city/pic-5.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="nature">
+                    <img src="./img/nature/pic-5.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="painting">
+                    <img src="./img/painting/pic-5.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="snow">
+                    <img src="./img/snow/pic-5.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="valley">
+                    <img src="./img/valley/pic-5.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="city">
+                    <img src="./img/city/pic-6.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="nature">
+                    <img src="./img/nature/pic-6.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="painting">
+                    <img src="./img/painting/pic-6.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="snow">
+                    <img src="./img/snow/pic-6.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img" data-name="valley">
+                    <img src="./img/valley/pic-6.png" alt="">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque ac pretium sem, at feugiat nunc.
+                            Pellentesque aliquam et turpis egestas lacinia.
+                        </p>
+                        <div class="area">
+                            <a href="#" class="btn" title="btn">Read More</a>
+                            <a href="#" class="btn btn-socio" title="btn">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Imges to be filter end -->
+        </div>
+    </section>
+    <!--== CARD GRID WITH FILTERING EFFECT END ==-->
+
+
+
+    <!-- ===  FOOTER  START ======= -->
+      <footer>
+        <div class="socials">
+            <div class="box">
+                <h1>El Gallery</h1>
+                <div class="about">El Gallery: A Contemporary Art Experience
+                    Our mission is to create an immersive experience for visitors, offering a platform where art and culture converge. El Gallery is not just an exhibition space; it's a place for connection, inspiration, and discovery. Whether you're an art enthusiast or a first-time visitor, our carefully curated shows invite you to explore the cutting-edge of the art world.
+                    At El Gallery, every piece tells a story, and every visit promises a new journey through the evolving landscape of modern art.</div>
+            </div>
+            <div class="box">
+                <h1 class="quick">Quick Links</h1>
+                <ul class="q-links">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h1 class="social">Social Links</h1>
+                <ul class="s-links">
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">All Rights Reserved January 2025</div>
+      </footer>
+    <!-- ===  FOOTER  END ======= -->
+
+
+<!--Back2Top effect-->
+<span id="back2top-btn">
+    <span class="rocket">🚀</span>
+  </span>
+  
+
+  <!--ScrollRevealjs -->
+  <script src="https://unpkg.com/scrollreveal"></script> <!-- this script is responsible for the  display of item upon scrolling-->
+
+    <!--Custom js-->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
